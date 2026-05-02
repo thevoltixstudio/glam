@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Glam Salon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">GLAM</a>
+
+    <nav id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+    </button>
+</header>
+
+<section class="page-header">
+    <div class="page-header-content">
+        <span class="eyebrow">Service Menu</span>
+        <h1>Our Services</h1>
+        <p>Browse bridal and salon offerings designed for event days, regular care, and polished special-occasion styling.</p>
+    </div>
+</section>
+
+<section class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="bridal">Bridal</button>
+    <button class="filter-btn" data-filter="salon">Salon</button>
+</section>
+
+<section class="services-page">
+    <div id="services-container" class="service-grid"></div>
+</section>
+
+<footer></footer>
+
+<script src="assets/js/contact-data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/services-data.js"></script>
+<script src="assets/js/render-services.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Glam Salon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">GLAM</a>
+
+    <nav id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+    </button>
+</header>
+
+<section class="page-header">
+    <div class="page-header-content">
+        <span class="eyebrow">Portfolio</span>
+        <h1>Our Work</h1>
+        <p>Explore bridal finishes, styling details, and salon transformations from recent client sessions.</p>
+    </div>
+</section>
+
+<section class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="bridal">Bridal</button>
+    <button class="filter-btn" data-filter="salon">Salon</button>
+</section>
+
+<section class="portfolio-section">
+    <div id="gallery" class="portfolio-grid"></div>
+</section>
+
+<div id="popup" class="popup">
+    <button class="close" type="button" onclick="closePopup()" aria-label="Close preview">&times;</button>
+    <img id="popup-img" alt="Selected portfolio work">
+</div>
+
+<footer></footer>
+
+<script src="assets/js/contact-data.js"></script>
+<script src="assets/js/portfolio-data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/render-portfolio.js"></script>
+
+</body>
+</html>

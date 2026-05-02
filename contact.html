@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Glam Salon</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">GLAM</a>
+
+    <nav id="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+    </button>
+</header>
+
+<section class="page-header">
+    <div class="page-header-content">
+        <span class="eyebrow">Contact</span>
+        <h1>Plan your appointment</h1>
+        <p>Reach out for bridal bookings, salon services, or quick availability checks through call or WhatsApp.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <p class="contact-copy">We help with consultations, bridal schedules, and same-day salon appointments whenever slots are available.</p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Address:</strong> <span id="address"></span></p>
+        <p><strong>Timing:</strong> <span id="timing"></span></p>
+
+        <div class="contact-actions">
+            <a id="whatsappBtn" class="btn">Book on WhatsApp</a>
+            <a id="callBtn" class="btn secondary">Call Now</a>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Send Message</h2>
+        <p class="contact-copy">Share your event date, preferred service, or any detail you want us to know before the booking.</p>
+        <input type="text" id="name" placeholder="Your name">
+        <input type="text" id="service" placeholder="Service required">
+        <textarea id="message" placeholder="Tell us what you need"></textarea>
+
+        <button class="btn" type="button" onclick="sendToWhatsApp()">Send on WhatsApp</button>
+    </div>
+</section>
+
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14327.73213019877!2d85.8968697!3d26.1337264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb90edd2a0265%3A0x4de631d919724f1b!2sglam!5e0!3m2!1sen!2sin!4v1777728506648!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer></footer>
+
+<script src="assets/js/contact-data.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact-page.js"></script>
+
+</body>
+</html>
